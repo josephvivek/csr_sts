@@ -256,7 +256,7 @@ h2 {
 }
 #home
 {
-  height: 75vh;
+  height: 65vh;
   object-fit: contain;
   border-radius: 5rem;
   overflow: hidden;
