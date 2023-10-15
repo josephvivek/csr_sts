@@ -256,10 +256,11 @@ h2 {
 }
 #home
 {
-  height: 65vh;
+  height: 80vh;
   object-fit: contain;
   border-radius: 5rem;
   overflow: hidden;
+  transition: all ease 0.1s;
 }
 
 #blob
@@ -340,6 +341,9 @@ h2 {
   .carousel{
       gap: 0rem;
   }
+  #home{
+    height: 60vh;
+  }
 }
 
 /* .card
@@ -355,9 +359,24 @@ h2 {
 }
 
 #clip{
+  position: relative;
   transition: all ease-in-out 0.5s;
 }
 
+
+#clip::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+              linear-gradient(to top, rgba(0, 0, 0, 0.078)  60%, rgba(0, 0, 0, 0.797));
+  z-index: 1;
+  color: white;
+  pointer-events: none;
+}
 
 #clip:hover{
   transform: scale(1.03);
