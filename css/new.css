@@ -355,8 +355,11 @@ h2 {
 
 .card{
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: large;
 }
+
+
 
 #clip{
   position: relative;
